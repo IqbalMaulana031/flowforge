@@ -1,0 +1,1 @@
+import type {Run} from '../../types';export function RunList({runs,onSelect}:{runs:Run[];onSelect:(run:Run)=>void}){return <div>{runs.map(r=><button className="row" key={r.id} onClick={()=>onSelect(r)}>{r.id.slice(0,8)} — {r.status} — {r.trigger_type}</button>)}</div>}

@@ -1,0 +1,1 @@
+import {api} from './client';import type {ApiResponse} from '../types';export async function health(){const {data}=await api.get<ApiResponse<unknown>>('/health');return data.data}

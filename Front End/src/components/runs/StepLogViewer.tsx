@@ -1,0 +1,1 @@
+export function StepLogViewer({logs}:{logs:unknown[]}){return <pre>{JSON.stringify(logs,null,2)}</pre>}
